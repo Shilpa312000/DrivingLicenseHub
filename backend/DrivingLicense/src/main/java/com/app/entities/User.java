@@ -55,7 +55,6 @@ public class User extends BaseEntity{
 	private List<Test> test;
 	
 	@OneToOne
-	@JoinColumn(name = "result_id")
 	private TestResult testResult;
 	
 	@OneToMany(mappedBy = "user")
